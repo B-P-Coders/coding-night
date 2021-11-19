@@ -1,6 +1,5 @@
 import React from "react";
 import * as styles from "../styles/calculator.module.css"
-import Iframe from 'react-iframe'
 
 export default function Calculator(){
 const createDigits = () =>{
