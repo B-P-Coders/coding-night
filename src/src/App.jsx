@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Layout from "./components/Layout"
 import Index from './pages/Index';
 import Sidebar from './components/Layout';
@@ -12,10 +12,10 @@ export default function App()
         <Router>
            <Sidebar/>
 
-        <Switch>
-          <Route path='/Calculator' component={Calculator} />
+        <Routes>
+          <Route path='/calculator' component={Calculator} />
           <Route exact path='/' component={Index} />
-        </Switch>
+        </Routes>
 
 
         </Router>
