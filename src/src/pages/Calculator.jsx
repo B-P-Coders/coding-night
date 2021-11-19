@@ -1,154 +1,38 @@
 import React from "react";
 import * as styles from "../styles/calculator.module.css"
-export default function calculator(){
-
-const calculator = document.querySelector('.calculator')
-const keys = calculator.querySelector('.calculator__keys')
-const display = calculator.querySelector('.calculator__display')
-const operatorKeys = keys.querySelectorAll('[data-type="operator"]')
-
-keys.addEventListener('click', event => {
-  if (!event.target.closest('button')) return
-
-  const key = event.target
-  const keyValue = key.textContent
-  const displayValue = display.textContent
-  const { type } = key.dataset
-  const { previousKeyType } = calculator.dataset
-
-  if (type === 'number') {
-    if (
-      displayValue === '0' ||
-      previousKeyType === 'operator'
-    ) {
-      display.textContent = keyValue
-    } else {
-      display.textContent = displayValue + keyValue
-    }
-  }
-
-  if (type === 'operator') {
-    operatorKeys.forEach(el => { el.dataset.state = '' })
-    key.dataset.state = 'selected'
-
-    calculator.dataset.firstNumber = displayValue
-    calculator.dataset.operator = key.dataset.key
-  }
-
-  if (type === 'equal') {
-    const firstNumber = calculator.dataset.firstNumber
-    const operator = calculator.dataset.operator
-    const secondNumber = displayValue
-    display.textContent = calculate(firstNumber, operator, secondNumber)
-  }
-
-  if (type === 'clear') {
-    display.textContent = '0'
-    delete calculator.dataset.firstNumber
-    delete calculator.dataset.operator
-  }
-
-  calculator.dataset.previousKeyType = type
-})
-
-function calculate (firstNumber, operator, secondNumber) {
-  firstNumber = parseInt(firstNumber)
-  secondNumber = parseInt(secondNumber)
-
-  if (operator === 'plus') return firstNumber + secondNumber
-  if (operator === 'minus') return firstNumber - secondNumber
-  if (operator === 'times') return firstNumber * secondNumber
-  if (operator === 'divide') return firstNumber / secondNumber
-}
-
-
-function clearCalculator () {
-  const clearKey = document.querySelector('[data-type="clear"]')
-  clearKey.click()
-
-  operatorKeys.forEach(key => { key.dataset.state = '' })
-}
-
-function testClearKey () {
-  clearCalculator()
-  console.assert(display.textContent === '0', 'Clear key. Display should be 0')
-  console.assert(!calculator.dataset.firstNumber, 'Clear key. No first number remains')
-  console.assert(!calculator.dataset.operator, 'Clear key. No operator remains')
-}
-
-function testKeySequence (test) {
-  test.keys.forEach(key => {
-    document.querySelector(`[data-key="${key}"]`).click()
-  })
-
-
-  console.assert(display.textContent === test.value, test.message)
-
-  clearCalculator()
-  testClearKey()
-}
-
-const tests = [{
-  keys: ['1'],
-  value: '1',
-  message: 'Click 1'
-}, {
-  keys: ['1', '5'],
-  value: '15',
-  message: 'Click 15'
-}, {
-  keys: ['1', '5', '9'],
-  value: '159',
-  message: 'Click 159'
-}, {
-  keys: ['2', '4', 'plus', '7', 'equal'],
-  value: '31',
-  message: 'Calculation with plus'
-}, {
-  keys: ['3', 'minus', '7', '0', 'equal'],
-  value: '-67',
-  message: 'Calculation with minus'
-}, {
-  keys: ['1', '5', 'times', '9', 'equal'],
-  value: '135',
-  message: 'Calculation with times'
-}, {
-  keys: ['9', 'divide', '3', 'equal'],
-  value: '3',
-  message: 'Calculation with divide'
-}, {
-  keys: ['9', 'divide', '0', 'equal'],
-  value: 'Infinity',
-  message: 'Calculation. Divide by 0'
-}]
-
-tests.forEach(testKeySequence)
+export default function Calculator(){
+var currentNum = '';
+var total = 0;
+var operation = '';
 
 return(
-  <div className={styles.container}>
-  <div className={styles.calculator}>
-    <div className={styles.calculator__display}>0</div>
-    <div className={styles.calculator__keys}>
-      <button data-key="plus" data-type="operator">+</button>
-      <button data-key="minus" data-type="operator">-</button>
-      <button data-key="times" data-type="operator">&times;</button>
-      <button data-key="divide" data-type="operator">÷</button>
-      <button data-key="1" data-type="number">1</button>
-      <button data-key="2" data-type="number">2</button>
-      <button data-key="3" data-type="number">3</button>
-      <button data-key="4" data-type="number">4</button>
-      <button data-key="5" data-type="number">5</button>
-      <button data-key="6" data-type="number">6</button>
-      <button data-key="7" data-type="number">7</button>
-      <button data-key="8" data-type="number">8</button>
-      <button data-key="9" data-type="number">9</button>
-      <button data-key="0" data-type="number">0</button>
-      <button class="decimal" data-type="number">.</button>
-      <button class="clear" data-type="clear">C</button>
-      <button data-key="equal" data-type="equal">=</button>
-    </div>
-  </div>
-</div>
 
+<div id="calculator">
+
+    <div id="screen">
+      <p>0</p>
+    </div>
+    <div id="buttonPad">
+      <button id="ca">CA</button>
+      <button id="7">7</button>
+      <button id="4">4</button>
+      <button id="1">1</button>
+      <button id="0">0</button>
+      <button id="ce">CE</button>
+      <button id="8">8</button>
+      <button id="5">5</button>
+      <button id="2">2</button>
+      <button id="decimal">.</button>
+      <button id="percent">%</button>
+      <button id="9">9</button>
+      <button id="6">6</button>
+      <button id="3">3</button>
+      <button id="equals">=</button>
+      <button id="divide">/</button>
+      <button id="times">x</button>
+      <button id="minus">-</button>
+      <button id="plus">+</button>
+      </div>
+      </div>
 )
 }
