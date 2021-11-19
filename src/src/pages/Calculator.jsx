@@ -1,7 +1,7 @@
 import React from "react";
-import * as styles from "../styles/calculator.module.css" 
+import * as styles from "../styles/calculator.module.css"
 export default function calculator(){
-  
+
 const calculator = document.querySelector('.calculator')
 const keys = calculator.querySelector('.calculator__keys')
 const display = calculator.querySelector('.calculator__display')
@@ -125,9 +125,9 @@ const tests = [{
 tests.forEach(testKeySequence)
 
 return(
-  <div class="container">
-  <div class="calculator">
-    <div class="calculator__display">0</div>
+  <div className={styles.container}>
+  <div className={styles.calculator}>
+    <div className={styles.calculator__display}>0</div>
     <div class="calculator__keys">
       <button data-key="plus" data-type="operator">+</button>
       <button data-key="minus" data-type="operator">-</button>
@@ -149,6 +149,6 @@ return(
     </div>
   </div>
 </div>
-    
+
 )
 }
