@@ -38,7 +38,3 @@ app.on('activate', () => {
         createWindow()
     }
 })
-
-app.on('ready', () => {
-
-})
