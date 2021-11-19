@@ -31,7 +31,9 @@
     "@babel/core": "^7.16.0",
     "electron": "^16.0.1",
     "electron-packager": "^15.4.0",
-    "missing": "^0.0.1"
+    "missing": "^0.0.1",
+    "npm-install-missing": "^0.1.4",
+    "react-router-dom": "^6.0.2"
   },
   "devDependencies": {
     "foreman": "^3.0.1",
