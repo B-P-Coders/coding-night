@@ -1,77 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Glegoo);
-
-body {
-  background-color: #ddd;
+.App{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
-#calcTop, #calcBottom {
-  height: 20px;
-  width: 300px;
-  background-color: #777;
-  box-shadow: 3px 3px 2px #222 ;
-  margin: auto;
-}
-#calcTop {
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-
-}
-#calcBottom {
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-}
-#calcBody {
-  background-color: #777;
-  height: 400px;
-  width: 300px;
-  box-shadow: 3px 3px 2px #222;
-  margin: auto;
-}
-h1, h3, #screen {
-  font-family: 'Glegoo', Serif;
-}
-h1 {
-  margin: 0px 40px 0px 40px;
-  color: #ddd;
-  font-size: 1.8em;
-  text-align: center;
-}
-h3 {
-  margin: 0px 40px 10px 40px;
-  color: #ddd;
-  font-size: 0.8em;
-  font-weight: 300;
-  text-align: center;
-}
-#screen {
-  margin: 20px 40px 20px 40px;
-  height: 35px;
-  background: #8EB095;
-  border-radius: 3px;
-  box-shadow: 2px 2px 1px #555 inset;
-}
-#screen p {
-  position: relative;
-  top: -3px;
-  margin: 7px;
-  text-align: right;
-  font-size: 1.4em;
+.calculator{
+  width: 100%;
+  max-width: 400px;
+  background-color: #FFF;
+  border-radius: 16px;
   overflow: hidden;
 
 }
-#buttonPad {
-  -webkit-column-count: 4;
-  -moz-column-count: 4;
-  column-count: 4;
-  width: 240px;
-  margin: auto;
-}
-button {
-  height: 35px;
-  width: 50px;
-  margin: 5px 0 5px 0;
-  border-radius: 3px;
-  font-size: 1.1em;
-}
-#plus {
-  height: 80px;
+.display{
+
 }
