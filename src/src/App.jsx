@@ -10,12 +10,11 @@ export default function App()
 {
     return(
         <Router>
-           <Sidebar/>
 
-        <Routes>
-          {/* <Route path='/calculator' element={<Calculator />}/> */}
-          <Route exact path='/' element={<Index/>} />
-        </Routes>
+          <Routes>
+            {/* <Route path='/calculator' element={<Calculator />}/> */}
+            <Route exact path='/'  element={<Index/>} />
+          </Routes>
 
 
         </Router>
