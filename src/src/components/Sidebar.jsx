@@ -14,10 +14,17 @@ export default function Sidebar () {
       </div>
 
       <ul className={styles.list}>
+<<<<<<< Updated upstream
         <li><Link to="/"><img src={Graduation} alt="Home" /></Link></li>
         <li><Link to="/calculator"><img src={Calculator-solid} alt="Calculator" /></Link></li>
         <li><Link to="/notes"><img src={Sticky} alt="Notes" /></Link></li>
         <li><Link to="/timetable"><img src={Clipboard} alt="Timetable" /></Link></li>
+=======
+        <li><Link to="/"><img src="../images/graduation-cap-solid.svg" /></Link></li>
+        <li><Link to="/calculator"><img src="../images/calculator-solid.svg" /></Link></li>
+        <li><Link to="/notes"><img src="../images/sticky-note-solid.svg" /></Link></li>
+        <li><Link to="/timetable"><img src="../images/clipboard-list-solid.svg"/></Link></li>
+>>>>>>> Stashed changes
       </ul>
 
       <div>
