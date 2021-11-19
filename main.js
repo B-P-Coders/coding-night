@@ -10,7 +10,9 @@ function createWindow() {
         height: 600,
         webPreferences: {
             nodeIntegration: true
-        }
+        },
+        title: "School4u",
+        titleBarStyle: 'hiddenInset'
     })
 
     mainWindow.loadURL(
