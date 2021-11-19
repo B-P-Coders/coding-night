@@ -128,7 +128,7 @@ return(
   <div className={styles.container}>
   <div className={styles.calculator}>
     <div className={styles.calculator__display}>0</div>
-    <div class="calculator__keys">
+    <div className={styles.calculator__keys}>
       <button data-key="plus" data-type="operator">+</button>
       <button data-key="minus" data-type="operator">-</button>
       <button data-key="times" data-type="operator">&times;</button>
