@@ -23,8 +23,9 @@
   align-items: center;
   flex-direction: column;
   text-decoration: none;
-  color:red;
+  list-style-type: none;
   justify-content: space-around;
+  padding: 40px;
   height: 6vw;
 }
 
@@ -32,5 +33,6 @@
   position: fixed;
   width: 15vw;
 }
+
 
 

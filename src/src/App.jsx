@@ -13,8 +13,8 @@ export default function App()
            <Sidebar/>
 
         <Routes>
-          <Route path='/calculator' component={Calculator} />
-          <Route exact path='/' component={Index} />
+          {/* <Route path='/calculator' element={<Calculator />}/> */}
+          <Route exact path='/' element={<Index/>} />
         </Routes>
 
 
