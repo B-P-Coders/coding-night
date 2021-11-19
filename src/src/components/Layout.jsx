@@ -1,11 +1,15 @@
 import React from 'react';
 import Sidebar from './Sidebar';
+import styles from '../styles/layout.module.css';
 
 export default function Layout ({children}) {
+  console.log(styles)
   return (
-    <div>
+    <div className={styles.container}>
       <Sidebar/>
-      {children}
+      <div className={styles.site}>
+        {children}
+      </div>
     </div>
   )
 }
