@@ -22,7 +22,7 @@ export default function Card(props) {
             <div className={styles.flipCardInner}>
                 <div className={styles.flipCardFront}>
                     <div className={styles.imgcontainer}><img src={picture} alt="essa"/></div>
-                    <h3>{props.title}</h3>
+                    <p>{props.title}</p>
                     <span>{props.desc}</span>
                 </div>
                 <div className={styles.flipCardBack}>

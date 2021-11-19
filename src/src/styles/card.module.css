@@ -5,6 +5,7 @@
   perspective: 1000px;
   font-family: var(--primary-font);
   padding: 1vw;
+  color: var(--accent-color);
 }
 
 .imgcontainer {
@@ -36,6 +37,9 @@
 }
 
 .flipCardFront > p {
+  margin-top: -2vh;
+  margin-bottom: 2vh;
+  font-size: 3vh;
 }
 .flipCardFront > span {
   font-size: smaller;
