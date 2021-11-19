@@ -12,7 +12,7 @@ function createWindow() {
             nodeIntegration: true
         },
         title: "School4u",
-        titleBarStyle: 'hiddenInset'
+        // titleBarStyle: 'hiddenInset'
     })
 
     mainWindow.loadURL(

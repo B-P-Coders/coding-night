@@ -5,6 +5,7 @@ import Layout from "./components/Layout"
 import Index from './pages/Index';
 import Sidebar from './components/Layout';
 import Calculator from './pages/Calculator'
+import Notes from './pages/Notes';
 
 export default function App()
 {
@@ -12,8 +13,9 @@ export default function App()
         <Router>
 
           <Routes>
-            {/* <Route path='/calculator' element={<Calculator />}/> */}
-            <Route exact path='/'  element={<Index/>} />
+            <Route path='/calculator' element={<Calculator />}/>
+            <Route exact path='/' element={<Index/>} />
+            <Route exact path='/notes' element={<Notes/>} /> 
           </Routes>
 
 

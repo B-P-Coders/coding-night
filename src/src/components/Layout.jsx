@@ -6,7 +6,7 @@ export default function Layout ({children}) {
   console.log(styles)
   return (
     <div className={styles.container}>
-      <link rel="stylesheet" href="/themes/default.css" />
+      <link rel="stylesheet" href="./themes/default.css" />
       <Sidebar/>
       <div className={styles.site}>
         {children}
