@@ -1,5 +1,5 @@
 import React from "react";
-import * as styles from "../styles/calculator.nodule.css" 
+import * as styles from "../styles/calculator.module.css" 
 export default function calculator(){
   
 const calculator = document.querySelector('.calculator')
