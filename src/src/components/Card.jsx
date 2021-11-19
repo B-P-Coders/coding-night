@@ -21,8 +21,9 @@ export default function Card(props) {
         <div className={styles.flipCard}>
             <div className={styles.flipCardInner}>
                 <div className={styles.flipCardFront}>
-                    <img src={picture} alt="essa" />
-                    <p>{props.title}</p>
+                    <div className={styles.imgcontainer}><img src={picture} alt="essa"/></div>
+                    <h3>{props.title}</h3>
+                    <span>{props.desc}</span>
                 </div>
                 <div className={styles.flipCardBack}>
                     {props.values.map((value) => {

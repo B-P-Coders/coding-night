@@ -1,10 +1,16 @@
 .flipCard {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  height: 60vh;
+  width: 40vh;
   perspective: 1000px;
   font-family: var(--primary-font);
   padding: 1vw;
+}
+
+.imgcontainer {
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
 }
 
 .flipCardInner {
@@ -30,7 +36,9 @@
 }
 
 .flipCardFront > p {
-  margin-top: 2vw;
+}
+.flipCardFront > span {
+  font-size: smaller;
 }
 
 .flipCardBack {
