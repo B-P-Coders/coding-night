@@ -1,0 +1,28 @@
+{
+  "name": "school4u",
+  "version": "1.0.0",
+  "description": "Educational app",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/B-P-Coders/coding-night.git"
+  },
+  "keywords": [
+    "education",
+    "planning",
+    "management"
+  ],
+  "author": "B&P Coders",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/B-P-Coders/coding-night/issues"
+  },
+  "homepage": "https://github.com/B-P-Coders/coding-night#readme",
+  "dependencies": {
+    "@babel/core": "^7.16.0",
+    "electron": "^16.0.1"
+  }
+}
