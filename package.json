@@ -4,7 +4,8 @@
   "description": "Educational app",
   "main": "main.js",
   "scripts": {
-    "test": "electron ."
+    "start-react": "cd src && npm start",
+    "build-react": "cd src && npm run build"
   },
   "repository": {
     "type": "git",
@@ -15,6 +16,15 @@
     "planning",
     "management"
   ],
+  "build": {
+    "appId": "com.bpstudio.school4u",
+    "win": {
+      "iconUrl": ""
+    },
+    "directories": {
+      "buildResources": "public"
+    }
+  },
   "author": "B&P Coders",
   "license": "MIT",
   "bugs": {
@@ -23,6 +33,17 @@
   "homepage": "https://github.com/B-P-Coders/coding-night#readme",
   "dependencies": {
     "@babel/core": "^7.16.0",
-    "electron": "^16.0.1"
+    "electron": "^16.0.1",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "^19.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.27.1"
+  },
+  "devDependencies": {
+    "electron-builder": "^22.13.1",
+    "foreman": "^3.0.1",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.4.1"
   }
 }
