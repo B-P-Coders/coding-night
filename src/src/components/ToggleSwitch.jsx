@@ -1,15 +1,33 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import styles from '../styles/toggle.module.css'
 
-export default function ToggleSwitch () {
+const themes = [
+  "default",
+  "falcon",
+  "luna",
+  "suna",
+  "fairy"
+]
+
+export default function ToggleSwitch ()
+{
+
+  const themeSelect = useRef()
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || 'default')
+
+  function ChangeTheme()
+  {
+    setTheme(themeSelect.current.value)
+    localStorage.setItem("theme", themeSelect.current.value)
+  }
   return (
     <div>
-      <link rel="stylesheet" href="/themes/default.css" />
+      <link rel="stylesheet" href={"./themes/" + theme + ".css"} />
       <label className={styles.switch}>
-        <input type="checkbox" checked>
-        <span className={styles.slider} className={styles.round}></span>
+        <select onChange={ChangeTheme} ref={themeSelect} defaultValue={theme}>
+          {themes.map((theme) => <option>{theme}</option>)}
+        </select>
       </label>
     </div>
   )
 }
-

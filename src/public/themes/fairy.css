@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&family=Righteous&family=Roboto&display=swap');
 
-
 :root {
-    --primary-color: #FFE699;
-    --secondary-color: #FFF9B6;
-    --accent-color: #99800e;
-    --secondary-accent-color: #FFCCD2;
+    --primary-color: #FF87CA;
+    --secondary-color: #FFC4E1;
+    --accent-color: #EAEAEA;
+    --secondary-accent-color: #EED7CE;
     --primary-font: 'Roboto', sans-serif;
-    --secondary-font: 'Montserrat', sans-serif;
+    --secondary-font:  'Montserrat', sans-serif;
 }
