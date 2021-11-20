@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Index from './pages/Index';
 import Notes from './pages/Notes';
 import Math from './pages/Math'
@@ -11,7 +11,7 @@ import Charts from './pages/FalconFunction'
 export default function App()
 {
   return(
-    <Router>
+    <Router basename="/">
 
           <Routes>
             <Route path='/Math' element={<Math />}/>
