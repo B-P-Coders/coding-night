@@ -1,12 +1,13 @@
 import React from 'react';
 import styles from '../styles/sidebar.module.css';
 import { Link } from 'react-router-dom';
+import logo from "../images/icon.png"
 
 export default function Sidebar () {
   return (
     <div className={styles.main}>
       <div className={styles.logo}>
-        <img src="" alt="" />
+        <img className={styles.logoimg} src={logo} alt="logo" />
       </div>
 
       <ul className={styles.list}>
