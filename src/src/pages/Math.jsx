@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 import * as styles from '../styles/index.module.css'
 import Header from '../components/Header'
 import Card  from "../components/Card";
-import Calculator from '../images/calculator.png';
+import Calculator from '../images/calc.png';
 import Charts from '../images/chart.png';
 import Formulas from '../images/formulas.png';
 
@@ -23,9 +23,9 @@ export default function Math () {
             'This tool alows you to make a chart whatever you want!'
           ]
         }/>
-        <Card pic={Calculator} title="barteknapiszto!" desc="to tez!" values={
+        <Card pic={Calculator} title="Calculator4U" desc="Feel free to use this calculator whenever you need!" values={
           [
-            'tuzrobopis!'
+            'Probably the most useful thing to use while doing math or physics homework. Essential for counting.'
           ]
         }/>
       </div>
