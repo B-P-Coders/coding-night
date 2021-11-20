@@ -14,4 +14,32 @@
 .inputs > input
 {
     width: 50vw;
+    outline: none;
+    background-color: inherit;
+    border:none;
+    border-bottom: 3px solid var(--secondary-accent-color);
+    color: var(--secondary-accent-color);
+    font-size: 1.5vw;
+
+}
+
+
+.inputs > button
+{
+  position: relative;
+  padding: 5px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  background-color: var(--secondary-accent-color);
+  border: 2px solid var(--secondary-accent-color);
+  border-radius: 7px;
+  margin: 10px 15px;
+}
+
+
+
+
+.inputs > button:hover
+{
+  transform: scale(1.2);
 }
