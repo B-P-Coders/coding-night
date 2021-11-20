@@ -1,0 +1,37 @@
+.main{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main > * {
+  transition: all 0.6s ease-in-out;
+}
+
+
+.main > *:hover {
+  transform: scale(1.2);
+}
+
+.math{
+  background-color: cornflowerblue;
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.physics{
+background-color: darkorange;
+display: inline-block;
+font-size: 20px;
+padding: 20px;
+}
+.chemistry{
+background-color: hotpink;
+display: inline-block;
+font-size: 20px;
+padding: 20px;
+}

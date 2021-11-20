@@ -18,12 +18,10 @@ export default function App()
             <Route path='/timetable' element={<Timetable/>}/>
             <Route path='/notes' element={<Notes />}/>
             <Route exact path='/' element={<Index/>} />
-           <Route path='/formulas' element={<Formulas />}/>
+            <Route path='/formulas' element={<Formulas />}/>
             <Route path='/charts' element={<Charts/>}/>
             <Route path='/calculator' element={<Calculator />}/>
           </Routes>
-
-
         </Router>
     )
 }
