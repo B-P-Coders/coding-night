@@ -12,7 +12,7 @@ export default function Sidebar () {
 
       <ul className={styles.list}>
         <li><Link to="/">🎓</Link></li>
-        <li><Link to="/calculator">🧮</Link></li>
+        <li><Link to="/math">🧮</Link></li>
         <li><Link to="/notes">📒</Link></li>
         <li><Link to="/timetable">🗓️</Link></li>
       </ul>
