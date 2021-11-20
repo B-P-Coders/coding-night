@@ -2,10 +2,10 @@
 
 
 :root {
-    --primary-color: #FFE699;
-    --secondary-color: #FFF9B6;
-    --accent-color: #99800e;
-    --secondary-accent-color: #FFCCD2;
+    --primary-color: #f7c83e;
+    --secondary-color: #fff99e;
+    --accent-color: #000000;
+    --secondary-accent-color: #FFCCD2y;
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Montserrat', sans-serif;
 }
