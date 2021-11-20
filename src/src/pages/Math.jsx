@@ -6,6 +6,7 @@ import Card  from "../components/Card";
 import Calculator from '../images/calc.png';
 import Charts from '../images/chart.png';
 import Formulas from '../images/formulas.png';
+import BinCalculator from '../pages/BinCalculator';
 
 export default function Math () {
   return (
@@ -13,8 +14,8 @@ export default function Math () {
       <div className={styles.main}>
       <Header value="Welcome to our Math mark! You can find here some reaally helpful tools!"/>
       <div className={styles.cardsContainer}>
-        <a href="/Charts">
-          <Card pic={Charts} title="Some amazing charts creator!" desc="Here you go, have fun!" values={
+        <a href="/bincalculator">
+          <Card pic={BinCalculator} title="Some amazing charts creator!" desc="Here you go, have fun!" values={
           [
             'This tool alows you to make a chart whatever you want!'
           ]
