@@ -14,7 +14,7 @@
 #  - main.js with window configuration
 #  - node_modules folder, where node modules are located:
 #  - icons folder 
-#  - src folder where most sorces for the app can be found, this folder contains:
+#  - src folder where most sources for the app can be found, this folder contains:
 #        - build folder which is responsible for the proper launch of the application on Electron,
 #        there are located following files: robots.txt, manifest.json, app and electron logos,  
 #        asset-manifest.json and index.html with static folder containing static css and JavaScript
@@ -26,7 +26,7 @@
 #             - themes folder with 5 .css files defining primary and secondary fonts and colors
 #        - src folder which incudes:
 #             - setupTests.js which imports testing js library
-#             - reportWebVitals.js being a set of metrics that aim to capture the user experience of th app
+#             - reportWebVitals.js being a set of metrics that aim to capture the user experience of the app
 #             - index.js rendering the app  in an element with id root
 #             - App.jsx importing all React components to return an app
 #             - images folder with svg and png graphics used in the program
