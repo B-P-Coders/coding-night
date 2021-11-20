@@ -1,80 +1,78 @@
-import React from "react";
-import * as styles from "../styles/calculator.module.css"
-import { useState } from "react";
+import React from 'react'
+import * as styles from '../styles/calculator.module.css'
+import { useState } from 'react'
+import Layout from '../components/Layout'
 
-export default function Calculator(){
-  const[calc, setCalc]= useState("");
-  const[result,setResult] = useState("");
+export default function Calculator() {
+    const [calc, setCalc] = useState('')
+    const [result, setResult] = useState('')
 
-const ops=['/','*','+','-','.'];
-const updateCalc = value =>{
+    const ops = ['/', '*', '+', '-', '.']
+    const updateCalc = (value) => {
+        if (
+            (ops.includes(value) && calc === '') ||
+            (ops.includes(value) && ops.includes(calc.slice(-1)))
+        ) {
+            return
+        }
 
-if( (ops.includes(value ) && calc==='') ||
-   (ops.includes(value)   && ops.includes(calc.slice(-1)) )    ){
-    return;
-   }
+        setCalc(calc + value)
 
-setCalc(calc + value);
-
-if(!ops.includes(value)){
-    setResult(eval(calc + value).toString());
-}
-}
-
-const createDigits = () =>{
-  const digits = [];
-
-    for(let i=1;i<10;i++){
-      digits.push(
-        <button
-        onClick={()=> updateCalc(i.toString())}
-         key={i}>
-           {i}
-
-        </button>
-      )
+        if (!ops.includes(value)) {
+            setResult(eval(calc + value).toString())
+        }
     }
-    return digits;
-}
- const calculate = () => {
-   setCalc(eval(calc).toString())
- }
 
- const deleteLast = () => {
-   if(calc == ''){
-     return;
-   }
+    const createDigits = () => {
+        const digits = []
 
+        for (let i = 1; i < 10; i++) {
+            digits.push(
+                <button onClick={() => updateCalc(i.toString())} key={i}>
+                    {i}
+                </button>
+            )
+        }
+        return digits
+    }
+    const calculate = () => {
+        setCalc(eval(calc).toString())
+    }
 
-    const value = calc.slice(0,-1);
+    const deleteLast = () => {
+        if (calc == '') {
+            return
+        }
 
-    setCalc(value);
- }
+        const value = calc.slice(0, -1)
 
-return(
-  <div className={styles.App}>
-<div className={styles.calculator}>
-  <div className={styles.display}>
-{result ? <span>({result})</span> : ''}&nbsp;
-{calc || '0'}
-  </div>
-  <div className={styles.operators}>
-<button onClick={() => updateCalc('/')}>/</button>
-<button onClick={() => updateCalc('*')}>*</button>
-<button onClick={() => updateCalc('+')}>+</button>
-<button onClick={() => updateCalc('-')}>-</button>
+        setCalc(value)
+    }
 
-<button onClick={deleteLast}>DEL</button>
-  </div>
-<div className={styles.digits}>
-  {createDigits()}
-<button onClick={()=> updateCalc('0')}>0</button>
-<button onClick={()=> updateCalc('.')}>.</button>
-<button onClick={calculate}>=</button>
-</div>
+    return (
+      <Layout>
+        <div className={styles.App}>
+            <div className={styles.calculator}>
+                <div className={styles.display}>
+                    {result ? <span>({result})</span> : ''}&nbsp;
+                    {calc || '0'}
+                </div>
+                <div className={styles.operators}>
+                    <button onClick={() => updateCalc('/')}>/</button>
+                    <button onClick={() => updateCalc('*')}>*</button>
+                    <button onClick={() => updateCalc('+')}>+</button>
+                    <button onClick={() => updateCalc('-')}>-</button>
 
-
-</div>
-</div>
-)
+                    <button onClick={deleteLast}>DEL</button>
+                </div>
+                <div className={styles.digits}>
+                    {createDigits()}
+                    <button onClick={() => updateCalc('0')}>0</button>
+                    <button onClick={() => updateCalc('.')}>.</button>
+                    <button onClick={calculate}>=</button>
+                </div>
+            </div>
+        </div>
+      </Layout>
+    )
 }

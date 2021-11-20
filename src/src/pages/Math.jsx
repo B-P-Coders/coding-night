@@ -20,17 +20,20 @@ export default function Math () {
           ]
         }/>
         </a>
+        <a href="/formulas">
         <Card pic={Formulas} title="Those are really helpful" desc="We've made some amazing tools just for you! It's all to help you get better in any subject!" values={
           [
             'Basics', 'Advanced', 'Physics', 'Chemistry'
           ]
         }/>
+        </a>
+        <a href="/calculator">
         <Card pic={Calculator} title="Calculator4U" desc="Feel free to use this calculator whenever you need!" values={
           [
             'Probably the most useful thing to use while doing math or physics homework. Essential for counting.'
           ]
-        }/>
-        </a>
+        }/></a>
+
       </div>
       </div>
 

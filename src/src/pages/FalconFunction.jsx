@@ -1,5 +1,4 @@
-import { memo } from "react";
-import React {useRef,memo } from "react";
+import React , {useRef,memo } from "react";
 
 	function rysuj()
 	{
@@ -48,4 +47,4 @@ import React {useRef,memo } from "react";
         )
 	}
 
-    export default memo(rysuj);	
+    export default memo(rysuj);
