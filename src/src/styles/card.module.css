@@ -41,6 +41,7 @@
   margin-top: -2vh;
   margin-bottom: 2vh;
   font-size: 3vh;
+  padding: 2vh;
 }
 .flipCardFront > span {
   font-size: smaller;
