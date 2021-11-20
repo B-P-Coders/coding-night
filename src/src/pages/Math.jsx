@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import Layout from '../components/Layout'
 import * as styles from '../styles/index.module.css'
 import Header from '../components/Header'
@@ -14,26 +15,28 @@ export default function Math () {
       <div className={styles.main}>
       <Header value="Welcome to our Math mark! You can find here some reaally helpful tools!"/>
       <div className={styles.cardsContainer}>
-        <a href="/bincalculator#/bincalculator">
-          <Card pic={Charts} title="From decimal to binary, hex and octal" desc="No number system is a problem for you now!" values={
-          [
-            'Tool used mostly by people intrested in IT but not only.  Hope you enjoy it!'
-          ]
-        }/>
-        </a>
-        <a href="/formulas#/formulas">
+        <Link to="/bincalculator">
+          <Card pic={Charts} title="Some amazing charts creator!" desc="Here you go, have fun!" values={
+            [
+              'This tool alows you to make a chart whatever you want!'
+            ]
+          }/>
+        </Link>
+
+        <Link to="/formulas">
         <Card pic={Formulas} title="Those are really helpful" desc="We've made some amazing tools just for you! It's all to help you get better in any subject!" values={
           [
             'Basics', 'Advanced', 'Physics', 'Chemistry'
           ]
         }/>
-        </a>
-        <a href="/calculator#/calculator">
+        </Link>
+        <Link to="/calculator">
         <Card pic={Calculator} title="Calculator4U" desc="Feel free to use this calculator whenever you need!" values={
           [
             'Probably the most useful thing to use while doing math or physics homework. Essential for counting.'
           ]
-        }/></a>
+        }/>
+        </Link>
 
       </div>
       </div>
