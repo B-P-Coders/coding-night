@@ -51,7 +51,7 @@ export default function Calculator() {
 
     return (
       <Layout>
-        <div className={styles.App}>
+        <div className={styles.Bpp}>
             <div className={styles.calculator}>
                 <div className={styles.display}>
                     {result ? <span>({result})</span> : ''}&nbsp;
