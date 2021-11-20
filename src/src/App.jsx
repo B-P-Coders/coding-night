@@ -6,7 +6,6 @@ import Math from './pages/Math'
 import Timetable from './pages/Timetable';
 import Calculator from './pages/Calculator';
 import Formulas from './pages/Formulas';
-import Charts from './pages/FalconFunction'
 import BinCalculator from './pages/BinCalculator';
 
 export default function App()
@@ -15,7 +14,6 @@ export default function App()
     <Router>
 
           <Routes>
-            <Route path='/charts' element={<Charts/>}/>
             <Route path='/math' element={<Math />}/>
             <Route path='/timetable' element={<Timetable/>}/>
             <Route path='/notes' element={<Notes />}/>
@@ -23,7 +21,6 @@ export default function App()
             <Route path='/calculator' element={<Calculator />}/>
             <Route path='/bincalculator' element={<BinCalculator />}/>
             <Route exact path='/' element={<Index/>} />
-
           </Routes>
         </Router>
     )

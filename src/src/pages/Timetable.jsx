@@ -11,7 +11,7 @@ function Timetable() {
     localStorage.setItem("timetable", input.current.value)
   }
   const input = useRef("input")
-  const [link, setLink] = useState(input.current.value || "")
+  const [link, setLink] = useState(localStorage.getItem("timetable") || "")
 
   return (
     <Layout>
