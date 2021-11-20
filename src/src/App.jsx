@@ -12,7 +12,7 @@ import BinCalculator from './pages/BinCalculator';
 export default function App()
 {
   return(
-    <Router>
+    <Router basename="/">
 
           <Routes>
             <Route path='/Math' element={<Math />}/>
