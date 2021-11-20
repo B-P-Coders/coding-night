@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../styles/sidebar.module.css';
 import { Link } from 'react-router-dom';
 import logo from "../images/icon.png"
+import ToggleSwitch from './ToggleSwitch';
 
 export default function Sidebar () {
   return (
@@ -15,6 +16,7 @@ export default function Sidebar () {
         <li><Link to="/math">🧮</Link></li>
         <li><Link to="/notes">📒</Link></li>
         <li><Link to="/timetable">🗓️</Link></li>
+        <li><ToggleSwitch/></li>
       </ul>
 
       <div>
