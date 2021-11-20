@@ -38,11 +38,11 @@ import React , {useRef,memo } from "react";
 
             <b>y = a x<sup>2</sup> + b x + c</b>
         <br/><br />
-            <input id="a" type="range" min="-100" max="100" value="0" oninput="rysuj()" /> a = <b ref={aa}></b>
+            <input ref={a} type="range" min="-100" max="100" value="0" oninput="rysuj()" /> a = <b ref={aa}></b>
         <br/><br />
-            <input id="b" type="range" min="-100" max="100" value="0" oninput="rysuj()" /> b = <b ref={bb}></b>
+            <input ref={b} type="range" min="-100" max="100" value="0" oninput="rysuj()" /> b = <b ref={bb}></b>
         <br/><br />
-            <input id="c" type="range" min="-100" max="100" value="0" oninput="rysuj()" /> c = <b ref={cc}></b>
+            <input ref={c} type="range" min="-100" max="100" value="0" oninput="rysuj()" /> c = <b ref={cc}></b>
 
             </>
         )
