@@ -13,8 +13,8 @@ const list = ['Timetable', 'Calendar', 'Calculator', 'Notebook', 'Markbook'];
 export default function Index () {
 function weekend() {
   let i = moment().day();
-      if(i == 6 || 7){
-          i.value = "Weekend już jest!";
+      if(i == 6 || i == 7){
+          SetTime("Weekend już jest!");
       }else{
         const timeDiff = moment().isoWeekday(6).substract(moment()) 
         SetTime(timeDiff)
