@@ -30,7 +30,7 @@
 #             - index.js rendering the app  in an element with id root
 #             - App.jsx importing all React components to return an app
 #             - images folder with svg and png graphics used in the program
-#             - styles folder where are located 13 css stylesheets, each one for styling one React component 
+#             - styles folder where are located 14 css stylesheets, each one for styling one React component 
 #             - pages folder where every component provides diffrent page, including:
 #                    - Index.jsx providing the main page of the app
 #                    - Timetable.jsx giving user a place for lesson plan
@@ -38,6 +38,7 @@
 #                    - Math.jsx which makes a page where user can choose from using a calculator or seeing formulas
 #                    - Calculator.jsx which provides a functional calculator on the page
 #                    - Formulas.jsx being a reminder of important formulas in math, physics and chemistry
+#                    - BinCalculator.jsx which changes decimal numbers into hexadecimal, binary and octal
 #             - components folder where are located React components being used in the app, it contains:
 #                    - Card.jsx being a template of the card model used in the app
 #                    - Header.jsx
