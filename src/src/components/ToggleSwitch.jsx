@@ -12,11 +12,12 @@ export default function ToggleSwitch ()
 {
 
   const themeSelect = useRef()
-  const [theme, setTheme] = useState('default')
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || 'default')
 
   function ChangeTheme()
   {
     setTheme(themeSelect.current.value)
+    localStorage.setItem("theme", themeSelect.current.value)
   }
   return (
     <div>
