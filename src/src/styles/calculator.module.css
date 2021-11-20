@@ -1,8 +1,13 @@
 .App{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
   display: flex;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
+  padding: 16px;
 }
 .calculator{
   width: 100%;
@@ -15,6 +20,10 @@
 .display{
 padding: 16px;
 text-align: right;
+background-color: black;
+color: blanchedalmond;
+font-size: 24px;
+font-weight: 300;
 }
 .display span{
   font-size: 14px;
@@ -25,4 +34,34 @@ button{
   appearance: none;
   border: none;
   outline: none;
+  color: #FFF;
+  font-size: 20px;
+  padding: 16px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+button:hover{
+  opacity: 0.9;
+}
+.operators button{
+  flex: 1,1,0%;
+  background-color: violet;
+  font-weight: 700;
+  width: 500000px;
+
+}
+.operators{
+  display: flex;
+  float: center;
+}
+
+.digits {
+  display: flex;
+  flex-wrap: wrap;
+}
+.digits button{
+  flex: 1 1 33.333%;
+  max-width: 33.333%;
+  background-color: black;
+
 }
