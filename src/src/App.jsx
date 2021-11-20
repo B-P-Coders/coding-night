@@ -7,17 +7,17 @@ import Sidebar from './components/Layout';
 import Calculator from './pages/Calculator'
 import Notes from './pages/Notes';
 import Math from './pages/Math'
-import TimeTable from './pages/Timetable';
+import Timetable from './pages/Timetable';
 
 export default function App()
 {
-    return(
-        <Router>
+  return(
+    <Router>
 
           <Routes>
-            <Route path='/Math' element={<Math />}/>
-            <Route exact path='/notes' element={<Notes/>} />
-            <Route exact path='/timetable' element={<TimeTable/>} />
+          <Route path='/Math' element={<Math />}/>
+          <Route path='/timetable' element={<Timetable/>}/>
+          <Route path='/calculator' element={<Calculator />}/>
             <Route exact path='/' element={<Index/>} />
 
           </Routes>
