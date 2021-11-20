@@ -8,9 +8,10 @@ function Timetable() {
 
   function fetchTimetable() {
     setLink(input.current.value)
+    localStorage.setItem("timetable", input.current.value)
   }
   const input = useRef("input")
-  const [link, setLink] = useState("")
+  const [link, setLink] = useState(input.current.value || "")
 
   return (
     <Layout>

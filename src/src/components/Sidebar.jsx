@@ -12,10 +12,10 @@ export default function Sidebar () {
       </div>
 
       <ul className={styles.list}>
-        <li><Link to="/">🎓</Link></li>
-        <li><Link to="/math">🧮</Link></li>
-        <li><Link to="/notes">📒</Link></li>
-        <li><Link to="/timetable">🗓️</Link></li>
+        <li title="Home"><Link to="/">🎓</Link></li>
+        <li title="Math"><Link to="/math">🧮</Link></li>
+        <li title="Notes"><Link to="/notes">📒</Link></li>
+        <li title="Timetable"><Link to="/timetable">🗓️</Link></li>
         <li><ToggleSwitch/></li>
       </ul>
 
