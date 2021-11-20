@@ -16,7 +16,7 @@ function weekend() {
       if(i == 6 || i == 7){
           SetTime("Weekend już jest!");
       }else{
-        const timeDiff = moment().isoWeekday(6).substract(moment()) 
+        const timeDiff = moment().isoWeekday(6).substract(moment())
         SetTime(timeDiff)
       }
 }
@@ -25,7 +25,7 @@ function weekend() {
   return (
     <Layout>
       <div className={styles.main}>
-        <Header value="Welcome to school4u! A place where you can manage your time efficiently!"/>
+        <Header value="Welcome to School4u! A place where you can manage your time efficiently!"/>
         <div className={styles.cardsContainer} onLoad={weekend}>
           <Card pic={picture} title="Check out our app's options" desc="We've made some amazing tools just for you! It's all to help you get better in any subject!" values={list}/>
           <Card pic={painting} title="Check out how many days are left to the weekend" desc="The time zone is selected automatically" values={[Time]}/>
