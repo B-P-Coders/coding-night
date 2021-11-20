@@ -4,6 +4,8 @@ import Index from './pages/Index';
 import Notes from './pages/Notes';
 import Math from './pages/Math'
 import Timetable from './pages/Timetable';
+import Calculator from './pages/Calculator';
+import Charts from './pages/FalconFunction'
 
 export default function App()
 {
@@ -11,11 +13,13 @@ export default function App()
     <Router>
 
           <Routes>
-          <Route path='/Math' element={<Math />}/>
-          <Route path='/timetable' element={<Timetable/>}/>
-          <Route path='/notes' element={<Notes />}/>
-          <Route exact path='/' element={<Index/>} />
-
+            <Route path='/Math' element={<Math />}/>
+            <Route path='/timetable' element={<Timetable/>}/>
+            <Route path='/notes' element={<Notes />}/>
+            <Route exact path='/' element={<Index/>} />
+            {/* <Route path='/formulas' element={<Formulas />}/> */}
+            <Route path='/charts' element={<Charts/>}/>
+            <Route path='/calculator' element={<Calculator />}/>
           </Routes>
 
 
