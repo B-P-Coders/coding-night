@@ -1,7 +1,7 @@
 .main {
   position:relative;
   background-color: var(--primary-color);
-  width: 6%;
+  width: 7%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -10,12 +10,12 @@
 }
 
 .logo {
-  width: 100%;
+  width: 90%;
   height: 5vw;
-  margin-top: 0.5vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin:0.5vh;
 }
 
 .logoimg
@@ -42,7 +42,7 @@
 }
 
 .main:hover {
-  width: 15vw;
+  width: 15%;
 }
 
 
