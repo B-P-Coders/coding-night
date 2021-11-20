@@ -1,0 +1,15 @@
+.main
+{
+    padding: 4vh;
+}
+.inputs
+{
+    padding: 1vmax;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.inputs > input
+{
+    width: 50vw;
+}

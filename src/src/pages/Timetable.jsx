@@ -1,19 +1,26 @@
-// import React, {useRef} from "react"
+import React, { useRef, useState, memo } from "react"
+import Iframe from 'react-iframe'
+import styles from "../styles/timetable.module.css"
 
-// export default function TimeTable() {
 
-//     function fetchTimetable() {
-//       iframe.current.src = input.current.value
-//     }
+function Timetable() {
 
-//     const input = useRef("input")
-//     const iframe = useRef("iframe")
-//     return
-//     (
-//         <input type="text" ref={input}>
-//         <input type="button" value="Pobierz plan">
-//         <iframe src="" frameborder="0" ref={iframe}></iframe>
-//     )
-// }
+  function fetchTimetable() {
+    setLink(input.current.value)
+  }
+  const input = useRef("input")
+  const [link, setLink] = useState("")
 
+  return (
+    <div className={styles.main}>
+      <div className={styles.inputs}>
+        <input type="text" ref={input}/>
+        <button onClick={fetchTimetable}>Pobierz plan</button>
+      </div>
+      <Iframe url={link} width={window.innerWidth / 1.2} height={window.innerHeight / 1.2}/>
+    </div>
+  )
+}
+
+export default memo(Timetable)
 
