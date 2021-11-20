@@ -18,6 +18,16 @@ export default function Math () {
             'Basics', 'Advanced', 'Physics', 'Chemistry'
           ]
         }/>
+        <Card pic={Charts} title="Some amazing charts creator!" desc="Here you go, have fun!" values={
+          [
+            'This tool alows you to make a chart whatever you want!'
+          ]
+        }/>
+        <Card pic={Calculator} title="barteknapiszto!" desc="to tez!" values={
+          [
+            'tuzrobopis!'
+          ]
+        }/>
       </div>
       </div>
 
