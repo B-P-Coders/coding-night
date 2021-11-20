@@ -5,15 +5,26 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-family: var(--primary-font);
+
 }
 
 .main > * {
   transition: all 0.6s ease-in-out;
+  border-radius: 10px;
 }
 
 
 .main > *:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+}
+
+.main>* {
+  height: 70vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .math{
@@ -21,6 +32,23 @@
   display: inline-block;
   font-size: 20px;
   padding: 20px;
+}
+
+.math > p {
+  text-align: left;
+  font-weight: bold;
+  font-size: 4vw;
+}
+
+.physics > p {
+  text-align: left;
+  font-weight: bold;
+  font-size: 4vw;
+}
+.chemistry > p {
+  text-align: left;
+  font-weight: bold;
+  font-size: 4vw;
 }
 
 .physics{
