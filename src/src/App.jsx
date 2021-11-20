@@ -12,17 +12,17 @@ import BinCalculator from './pages/BinCalculator';
 export default function App()
 {
   return(
-    <Router basename="/">
+    <Router>
 
           <Routes>
-            <Route path='/Math' element={<Math />}/>
+            <Route path='/charts' element={<Charts/>}/>
+            <Route path='/math' element={<Math />}/>
             <Route path='/timetable' element={<Timetable/>}/>
             <Route path='/notes' element={<Notes />}/>
             <Route path='/formulas' element={<Formulas />}/>
-            <Route path='/charts' element={<Charts/>}/>
             <Route path='/calculator' element={<Calculator />}/>
-            <Route exact path='/' element={<Index/>} />
             <Route path='/bincalculator' element={<BinCalculator />}/>
+            <Route exact path='/' element={<Index/>} />
 
           </Routes>
         </Router>

@@ -1,0 +1,8 @@
+.main
+{
+    position: absolute;
+    width: 100vw;
+    background-color: var(--secondary-accent-color);
+    width: 15px;
+    top: 0px;
+}

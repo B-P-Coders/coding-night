@@ -4,6 +4,7 @@
   "description": "Educational app",
   "main": "main.js",
   "scripts": {
+    "install-all": "npm install && cd src && npm install",
     "start-react": "cd src && npm start",
     "build-react": "cd src && npm run build",
     "start": "npm run build-react && electron .",
