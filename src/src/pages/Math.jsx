@@ -15,9 +15,9 @@ export default function Math () {
       <Header value="Welcome to our Math mark! You can find here some reaally helpful tools!"/>
       <div className={styles.cardsContainer}>
         <a href="/bincalculator#/bincalculator">
-          <Card pic={Charts} title="Some amazing charts creator!" desc="Here you go, have fun!" values={
+          <Card pic={Charts} title="From decimal to binary, hex and octal" desc="No number system is a problem for you now!" values={
           [
-            'This tool alows you to make a chart whatever you want!'
+            'Tool used mostly by people intrested in IT but not only.  Hope you enjoy it!'
           ]
         }/>
         </a>
