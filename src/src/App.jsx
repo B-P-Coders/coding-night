@@ -12,7 +12,6 @@ export default function App()
 {
   return(
     <Router>
-
           <Routes>
             <Route path='/math' element={<Math />}/>
             <Route path='/timetable' element={<Timetable/>}/>

@@ -1,49 +1,44 @@
 .main {
-  position:relative;
-  background-color: var(--primary-color);
-  width: 7%;
+  background-color: var(--secondary-color);
+  width: 50px;
   height: 100vh;
+  min-width:75px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   font-family: var(--primary-font);
   transition: all 1s ease-in-out;
+  box-shadow: 0 0 1em 1em #0101;
 }
 
 .logo {
-  width: 90%;
-  height: 5vw;
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin:0.5vh;
+  align-items: center ;
 }
 
 .logoimg
 {
+  margin-top: 1vh;
+  width: 55px;
   height: 100%;
   -webkit-app-region: drag;
-
 }
 
 .list {
-  margin-top: 4vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   text-decoration: none;
   list-style-type: none;
   justify-content: space-around;
-  padding: 40px;
   height: 100vh;
 }
 .list > li a
 {
+  color: var(--primary-color);
   text-decoration: none !important;
-  font-size: 5vmin;
-}
-
-.main:hover {
-  width: 15%;
+  font-size: 40px;
 }
 
 
