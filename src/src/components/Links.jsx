@@ -29,7 +29,6 @@ const links = [
 ]
 
 export default function Links() {
-  console.log(links)
   return(
     <>
     {links.map((ob, index) => {

@@ -1,25 +1,33 @@
 import React, { useRef, useState } from 'react'
 import styles from '../styles/toggle.module.css'
-import { MdSchool, MdDarkMode, MdLightMode } from "react-icons/md";
+
+const themes = [
+  "true",
+  "false",
+  "luna",
+  "suna",
+  "fairy"
+]
 
 export default function ToggleSwitch ()
 {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || true)
+
+  const themeSelect = useRef()
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || 'true')
 
   function ChangeTheme()
   {
-    setTheme(!theme)
-    localStorage.setItem("theme", !theme)
+    setTheme(themeSelect.current.value)
+    localStorage.setItem("theme", themeSelect.current.value)
   }
   return (
     <div>
       <link rel="stylesheet" href={"./themes/" + theme + ".css"} />
       <label className={styles.switch}>
-        <div onClick={ChangeTheme}>
-          {'true' === theme ? <MdLightMode/> : <MdDarkMode/> }
-        </div>
+        <select onChange={ChangeTheme} ref={themeSelect} defaultValue={theme}>
+          {themes.map((theme) => <option className={styles.themeSwitch}>{theme}</option>)}
+        </select>
       </label>
     </div>
   )
 }
-

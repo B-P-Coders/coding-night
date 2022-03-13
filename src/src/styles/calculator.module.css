@@ -1,4 +1,10 @@
-.Bpp{
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.Bpp {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,59 +15,73 @@
   justify-content: center;
   padding: 16px;
 }
-.calculator{
+
+.calculator {
   width: 100%;
   max-width: 400px;
-  background-color: rgba(255, 155, 106);;
+  background-color: var(--secondary-color);
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0px 2px 64px rgba(0, 0, 0, 0.2s);
+  box-shadow: 0 0 1em 1em var(--shadow);
 }
-.display{
-padding: 16px;
-text-align: right;
-background-color: black;
-color: rgba(255, 155, 106);;
-font-size: 24px;
-font-weight: 300;
+
+.display {
+  padding: 30px;
+  text-align: right;
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+  font-size: 24px;
+  font-weight: 300;
 }
-.display span{
+
+.display span {
   font-size: 14px;
   color: #888;
 }
 
-button{
+button {
   appearance: none;
   border: none;
   outline: none;
-  color: rgba(255, 155, 106);;
+  color: var(--accent-color);
   font-size: 20px;
   padding: 16px;
   cursor: pointer;
   transition: 0.4s;
 }
-button:hover{
-  opacity: 0.9;
-}
-.operators button{
-  flex: 1,1,0%;
-  background-color: rgb(179,0,30);
-  font-weight: 700;
-  width: 500000px;
 
+button:hover {
+  background-color: rgb(190, 190, 190);
 }
-.operators{
+
+.operators button {
+  flex: 1, 1, 0%;
+  background-color: var(--secondary-color);
+  width: 500000px;
+}
+
+.operators {
   display: flex;
-  float: center;
+  gap: 12px;
 }
 
 .digits {
   display: flex;
   flex-wrap: wrap;
 }
-.digits button{
+
+.digits button {
   flex: 1 1 33.333%;
   max-width: 33.333%;
-  background-color: black;
+  height: 10vh;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--shadow);
+}
 
+.del {
+  background-color: aqua !important;
+}
+
+.sub {
+  background-color: rgb(238, 61, 61) !important;
 }
