@@ -46,7 +46,7 @@ npm run build-packager
   
   - public folder where are located: 
   
-  - - School4U logos
+    - School4U logos
     
     - robots.txt
     
@@ -58,7 +58,7 @@ npm run build-packager
     
     - src folder which incudes
     
-    - - setupTests.js which imports testing js library
+      - setupTests.js which imports testing js library
       
       - reportWebVitals.js being a set of metrics that aim to capture the user experience of the app
       
@@ -72,7 +72,7 @@ npm run build-packager
       
       - pages folder where every component provides diffrent page, including: 
       
-      - - Index.jsx providing the main page of the app
+        - Index.jsx providing the main page of the app
         
         - Timetable.jsx giving user a place for lesson plan
         
@@ -88,7 +88,7 @@ npm run build-packager
         
         - components folder where are located React components being used in the app, it contains: 
         
-        - - ToggleSwitch.jsx which provides switching the theme
+          - ToggleSwitch.jsx which provides switching the theme
           
           - Sidebar.jsx creating the slidebar on the left on app's screen
           
