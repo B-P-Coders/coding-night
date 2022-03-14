@@ -2,11 +2,11 @@
 
 
 :root {
-  --primary-color: #CEE5D0;
-  --secondary-color: #ffffff;
-  --accent-color: #1a1a1a;
-  --secondary-accent-color: #FFBF86;
-  --primary-font:  'Roboto', sans-serif;
+  --primary-color: #f73eb0;
+  --secondary-color: #e3a7ff;
+  --accent-color: #000000;
+  --secondary-accent-color: #ffffff;
+  --primary-font: 'Roboto', sans-serif;
   --secondary-font: 'Montserrat', sans-serif;
   --border-radius-less: 7px;
   --border-radius-more: 20px;

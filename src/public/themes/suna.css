@@ -2,12 +2,12 @@
 
 
 :root {
-    --primary-color: #f7c83e;
-    --secondary-color: #fff99e;
-    --accent-color: #000000;
-    --secondary-accent-color: #FFCCD2y;
-    --primary-font: 'Roboto', sans-serif;
-    --secondary-font: 'Montserrat', sans-serif;
-    --border-radius-less: 7px;
-    --border-radius-more: 20px;
+  --primary-color: #f7c83e;
+  --secondary-color: #fff9a7;
+  --accent-color: #000000;
+  --secondary-accent-color: #FFCCD2;
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Montserrat', sans-serif;
+  --border-radius-less: 7px;
+  --border-radius-more: 20px;
 }

@@ -12,7 +12,6 @@ export default function Sidebar () {
     <div className={styles.drag}></div>
     <div className={styles.main}>
       <div className={styles.logo}>
-        <div className={styles.spacer}></div>
         <img className={styles.logoimg} src={logo} alt="logo" />
       </div>
 
