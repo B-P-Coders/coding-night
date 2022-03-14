@@ -8,8 +8,11 @@ import ToggleSwitch from './ToggleSwitch';
 
 export default function Sidebar () {
   return (
+    <>
+    <div className={styles.drag}></div>
     <div className={styles.main}>
       <div className={styles.logo}>
+        <div className={styles.spacer}></div>
         <img className={styles.logoimg} src={logo} alt="logo" />
       </div>
 
@@ -17,5 +20,6 @@ export default function Sidebar () {
         <Links/>
       </ul>
     </div>
+    </>
   )
 }
