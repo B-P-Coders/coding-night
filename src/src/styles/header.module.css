@@ -1,5 +1,5 @@
 .main {
   font-family: var(--primary-font);
-  color: #212121;
+  color: var(--secondary-accent-color);
   text-overflow: ellipsis;
 }
