@@ -1,9 +1,9 @@
 import {FaHome, FaCalendarAlt}  from "react-icons/fa";
-import { MdSchool} from "react-icons/md";
+import { MdOutlineDraw, MdSchool} from "react-icons/md";
 import { CgNotes } from "react-icons/cg";
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';;
+import * as styles from '../styles/links.module.css';
 
 const links = [
   {
@@ -26,6 +26,11 @@ const links = [
     path: '/timetable',
     icon: <FaCalendarAlt/>
   },
+  {
+    title: 'Drawing',
+    path: '/draw',
+    icon: <MdOutlineDraw/>
+  }
 ]
 
 export default function Links() {
@@ -39,6 +44,7 @@ export default function Links() {
       )
       }
     )}
+    <span className={styles.indicator}></span>
     </>
   )
 

@@ -46,9 +46,9 @@
 
 .exit {
   position: fixed;
-  top: 40px;
-  right: 40px;
-  font-size: 100px;
+  bottom: 20px;
+  left: 18px;
+  font-size: 40px;
   color: var(--primary-color);
   transition: all 0.3s ease-in-out;
 }

@@ -7,6 +7,7 @@ import Timetable from './pages/Timetable';
 import Calculator from './pages/Calculator';
 import Formulas from './pages/Formulas';
 import BinCalculator from './pages/BinCalculator';
+import Draw from './pages/Draw';
 
 export default function App()
 {
@@ -19,6 +20,7 @@ export default function App()
             <Route path='/formulas' element={<Formulas />}/>
             <Route path='/calculator' element={<Calculator />}/>
             <Route path='/bincalculator' element={<BinCalculator />}/>
+            <Route path='/draw' element={<Draw />}/>
             <Route exact path='/' element={<Index/>} />
           </Routes>
         </Router>
