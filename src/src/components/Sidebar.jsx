@@ -1,4 +1,5 @@
-import React from 'react';
+import {FiSettings}  from "react-icons/fi";
+import React, {useState} from 'react';
 import styles from '../styles/sidebar.module.css';
 import { Link } from 'react-router-dom';
 import Links from './Links';
@@ -14,12 +15,7 @@ export default function Sidebar () {
 
       <ul className={styles.list}>
         <Links/>
-        <li><ToggleSwitch/></li>
       </ul>
-
-      <div>
-
-      </div>
     </div>
   )
 }

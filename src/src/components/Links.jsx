@@ -25,7 +25,7 @@ const links = [
     title: 'Timetable',
     path: '/timetable',
     icon: <FaCalendarAlt/>
-  }
+  },
 ]
 
 export default function Links() {

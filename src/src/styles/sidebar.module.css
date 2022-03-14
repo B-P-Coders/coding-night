@@ -31,15 +31,13 @@
   flex-direction: column;
   text-decoration: none;
   list-style-type: none;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 6vh;
   height: 100vh;
 }
-.list > li a
+.list li a, .list li
 {
   color: var(--primary-color);
   text-decoration: none !important;
   font-size: 40px;
 }
-
-
-

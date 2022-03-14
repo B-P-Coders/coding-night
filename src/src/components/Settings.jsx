@@ -1,6 +1,6 @@
 import React from 'react';
 import * as styles from '../styles/settings.module.css';
-export default function Settings() {
+export default function Settings1() {
 	return (
 		<p className={styles.text}>
 			Choose Theme:
