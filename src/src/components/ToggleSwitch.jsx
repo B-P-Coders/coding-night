@@ -2,8 +2,8 @@ import React, { useRef, useState } from 'react'
 import styles from '../styles/toggle.module.css'
 
 const themes = [
-  "true",
-  "false",
+  "light",
+  "dark",
   "luna",
   "suna",
   "fairy",
@@ -14,7 +14,7 @@ export default function ToggleSwitch ()
 {
 
   const themeSelect = useRef()
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || 'true')
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || 'light')
 
   function ChangeTheme()
   {
