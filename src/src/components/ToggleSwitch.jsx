@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react'
-import styles from '../styles/toggle.module.css'
 
 const themes = [
   "true",
@@ -24,9 +23,9 @@ export default function ToggleSwitch ()
   return (
     <div>
       <link rel="stylesheet" href={"./themes/" + theme + ".css"} />
-      <label className={styles.switch}>
+      <label>
         <select onChange={ChangeTheme} ref={themeSelect} defaultValue={theme}>
-          {themes.map((theme) => <option className={styles.themeSwitch}>{theme}</option>)}
+          {themes.map((theme) => <option>{theme}</option>)}
         </select>
       </label>
     </div>
