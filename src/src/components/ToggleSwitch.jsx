@@ -6,7 +6,8 @@ const themes = [
   "false",
   "luna",
   "suna",
-  "fairy"
+  "fairy",
+  "falcon"
 ]
 
 export default function ToggleSwitch ()
