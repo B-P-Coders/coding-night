@@ -85,3 +85,24 @@ button:hover {
 .sub {
   background-color: rgb(238, 61, 61) !important;
 }
+
+.text {
+  display: flex;
+  align-items: flex-start;
+}
+.whole{
+  font-size: 1.1em;
+  margin: 3vw;
+  color: #888;
+}
+.try {
+  margin: auto;
+  font-weight: bold;
+text-align: center;
+margin: 2vw;
+}
+.quote{
+  font-style: italic;
+margin-bottom: 8vw;
+font-size: 1.5em;
+}
