@@ -15,9 +15,12 @@ export default function Layout({ children }) {
       </div>
       <FiSettings className={styles.open} onClick={() => setOpen(!open)}/>
       <section className={open ? styles.active : styles.closed}>
-        <div>
-          {/* Todo: zrobic karte do wybierania motywow*/}
-        <ToggleSwitch/>
+        <div className={styles.back}>
+          <div className={styles.element}>Settings</div>
+          <hr className={styles.line}/>
+          <div className={styles.element}>Choose theme: </div>
+          <span className={styles.themes}><ToggleSwitch/></span>
+          <hr className={styles.line}/>
         </div>
         <FiSettings  className={styles.exit} onClick={() => setOpen(!open)}/>
       </section>

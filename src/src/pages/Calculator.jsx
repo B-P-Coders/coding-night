@@ -52,7 +52,7 @@ export default function Calculator() {
 
     return (
       <Layout>
-        <Header value="Calculator just for tou!"/>
+        <Header value="Calculator just for you!"/>
         <main>
           <div className={styles.Bpp}>
               <div className={styles.calculator}>
@@ -75,10 +75,16 @@ export default function Calculator() {
                   </div>
               </div>
             </div>
-              <section>
-                {/* Todo: Bartek opisz tu kalkulator, ostyluj tez dodaj rozne wielkosci czcionek i ogolnie zeby to ladne wygladalo*/
-                }
+              <section className={styles.text}>
 
+                <div className={styles.whole}>
+                <div className={styles.quote}><q>Take calculated risks. That is quite different from being rash.</q> <br />
+                George S. Patton</div>
+                Usually a small electronic device that you often forget to bring to school, but no longer.
+                Now you can freely explore math in just a few clicks accessing it from wherever you want.
+                Perfect for quick calculations during doing homework.
+                <div className={styles.try}>Try yourself!</div>
+                </div>
               </section>
         </main>
       </Layout>
