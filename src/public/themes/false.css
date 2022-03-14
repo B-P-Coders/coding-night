@@ -8,4 +8,6 @@
     --primary-font: 'Roboto', sans-serif;
     --secondary-font:  'Montserrat', sans-serif;
     --shadow: #0101;
+    --border-radius-less: 7px;
+    --border-radius-more: 20px;
 }

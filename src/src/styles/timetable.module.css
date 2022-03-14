@@ -32,7 +32,7 @@
   background-color: var(--secondary-color);
   background-color: var(--secondary-accent-color);
   border: 2px solid var(--secondary-accent-color);
-  border-radius: 7px;
+  border-radius: var(--border-radius-less);
   margin: 10px 15px;
 }
 

@@ -8,4 +8,6 @@
     --secondary-accent-color: #114E60;
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Montserrat', sans-serif;
+    --border-radius-less: 7px;
+    --border-radius-more: 20px;
 }
