@@ -10,4 +10,6 @@
     --shadow: #0101;
     --border-radius-less: 7px;
     --border-radius-more: 20px;
+    --header: 1.5em;
+    --plain-text: 1.15em;
 }

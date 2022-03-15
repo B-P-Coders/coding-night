@@ -45,7 +45,7 @@
 .flipCardFront > p {
   margin-top: -2vh;
   margin-bottom: 2vh;
-  font-size: 3vh;
+  font-size: calc(var(--header) * 0.9);
   padding: 2vh;
 }
 .flipCardFront > span {

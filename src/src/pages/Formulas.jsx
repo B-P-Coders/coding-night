@@ -27,11 +27,13 @@ const physics = [
 ];
 
 const chemistry = [
-  'cm=n/Vr</div',
-  'cm=(cp⋅dr)(100%⋅M)',
-  'd=m/v</div>',
-  'pH + pOH = 14</div>',
-  'pV=nRT</div>'
+  'cm = n / Vr',
+  'cm = (cp • dr)(100% • M)',
+  'd = m / v',
+  'pH + pOH = 14',
+  'pV = nRT',
+  'Vm = V / n',
+  'n = m / M'
 ];
 
 export default function Formulas() {

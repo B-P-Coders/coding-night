@@ -34,5 +34,5 @@
     border:none;
     border-bottom: 3px solid var(--secondary-accent-color);
     color: var(--secondary-accent-color);
-    font-size: 1.5vw;
+    font-size: var(--header);
 }

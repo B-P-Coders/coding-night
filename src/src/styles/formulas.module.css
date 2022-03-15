@@ -30,36 +30,36 @@
 .math{
   background-color: cornflowerblue;
   display: inline-block;
-  font-size: 20px;
+  font-size:calc(var(--header)*0.9);
   padding: 20px;
 }
 
 .math > p {
   text-align: left;
   font-weight: bold;
-  font-size: 4vw;
+  font-size: calc(var(--header)*1.5);
 }
 
 .physics > p {
   text-align: left;
   font-weight: bold;
-  font-size: 4vw;
+  font-size:  calc(var(--header)*1.5);
 }
 .chemistry > p {
   text-align: left;
   font-weight: bold;
-  font-size: 4vw;
+  font-size:  calc(var(--header)*1.5);
 }
 
 .physics{
 background-color: darkorange;
 display: inline-block;
-font-size: 20px;
+font-size: calc(var(--header)*0.9);
 padding: 20px;
 }
 .chemistry{
 background-color: hotpink;
 display: inline-block;
-font-size: 20px;
+font-size: calc(var(--header)*0.9);
 padding: 20px;
 }

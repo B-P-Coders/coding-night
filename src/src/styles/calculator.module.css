@@ -30,12 +30,12 @@ main {
   text-align: right;
   background-color: var(--secondary-color);
   color: var(--accent-color);
-  font-size: 24px;
+  font-size: var(--header);
   font-weight: 300;
 }
 
 .display span {
-  font-size: 14px;
+  font-size: var(--plain-text);
   color: #888;
 }
 
@@ -44,7 +44,7 @@ button {
   border: none;
   outline: none;
   color: var(--accent-color);
-  font-size: 20px;
+  font-size: var(--header);
   padding: 16px;
   cursor: pointer;
   transition: 0.4s;
@@ -91,9 +91,9 @@ button:hover {
   align-items: flex-start;
 }
 .whole{
-  font-size: 1.1em;
+  font-size: var(--plain-text);
   margin: 3vw;
-  color: #888;
+  color: var(--accent-color);
 }
 .try {
   margin: auto;
@@ -104,5 +104,5 @@ margin: 2vw;
 .quote{
   font-style: italic;
 margin-bottom: 8vw;
-font-size: 1.5em;
+font-size: var(--header);
 }
