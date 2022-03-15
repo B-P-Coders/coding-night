@@ -26,7 +26,7 @@ export default function Math () {
         <Link to="/formulas">
         <Card pic={Formulas} title="Those are really helpful" desc="We've made some amazing tools just for you! It's all to help you get better in any subject!" values={
           [
-            'Basics', 'Advanced', 'Physics', 'Chemistry'
+            'Basics', 'Advanced', 'Physics', 'Chemistry', 'Math'
           ]
         }/>
         </Link>
