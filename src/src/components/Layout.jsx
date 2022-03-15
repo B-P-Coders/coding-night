@@ -18,8 +18,8 @@ export default function Layout({ children }) {
         <div className={styles.back}>
           <div className={styles.element}>Settings</div>
           <hr className={styles.line}/>
-          <div className={styles.element}>Choose theme: </div>
-          <span className={styles.themes}><ToggleSwitch/></span>
+          <div className={styles.element}>Theme:
+          <span className={styles.themes}><ToggleSwitch/></span></div>
           <hr className={styles.line}/>
         </div>
         <FiSettings  className={styles.exit} onClick={() => setOpen(!open)}/>

@@ -80,16 +80,21 @@
   padding: 3vw;
   display: flex;
   flex-direction: column;
-  font-size: calc(var(--plain-text) + 0.05);
+  font-size: calc(var(--header)*0.9);
 }
 .line{
   border: 1px solid rgb(82, 74, 74);
 }
 .element{
+  position: relative;
   padding: 1vw;
   margin-left: 2vw;
+  margin-bottom: 2vh;
 }
 .themes{
+  position: absolute;
   text-align: right;
-  margin-bottom: 3vw;
+  margin-top: 0;
+  right: 0;
+  margin-bottom: 2vw;
 margin-right: 3vw;}

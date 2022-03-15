@@ -1,0 +1,40 @@
+.list{
+  color: white;
+  width: 9vw;
+  height: 5vh;
+  background-color: rgb(12, 10, 10);
+  border-radius: var(--border-radius-less);
+  font-size: calc(var(--plain-text)*0.85);
+  padding: 0px;
+  font-weight: 400;
+  border: 0;
+outline: none;
+position: relative;
+
+-moz-appearance:none; /* Firefox */
+-webkit-appearance:none; /* Safari and Chrome */
+appearance:none;
+padding-left: 2vw;
+
+}
+.opt{
+  margin-left: 50px;
+}
+.container{
+  position: relative;
+}
+.container::after{
+  content: '>';
+  font: 17px "Consolas", monospace;
+  color: violet;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 1.1vw;
+
+  top: 1vh;
+  padding: 0 0 2px;
+  position: absolute;
+  pointer-events: none;
+}
