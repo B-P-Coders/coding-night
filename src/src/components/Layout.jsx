@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import Sidebar from './Sidebar';
 import ToggleSwitch from './ToggleSwitch';
 import styles from '../styles/layout.module.css';
-
+import ToggleFontSize from './ToggleFontSize';
 export default function Layout({ children }) {
   const [open, setOpen] = useState(false);
 
@@ -18,8 +18,11 @@ export default function Layout({ children }) {
         <div className={styles.back}>
           <div className={styles.element}>Settings</div>
           <hr className={styles.line}/>
-          <div className={styles.element}>Theme:
+          <div className={styles.element}>Theme
           <span className={styles.themes}><ToggleSwitch/></span></div>
+          <hr className={styles.line}/>
+          <div className={styles.element}>Font size
+          <span className={styles.fonts}><ToggleFontSize/></span></div>
           <hr className={styles.line}/>
         </div>
         <FiSettings  className={styles.exit} onClick={() => setOpen(!open)}/>
