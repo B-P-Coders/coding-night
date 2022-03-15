@@ -15,10 +15,7 @@
     "build-packager": "npm run build-win && npm run build-mac && npm run build-lin",
     "build-builder": "electron-builder"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/B-P-Coders/coding-night.git"
-  },
+  "repository": "git+https://github.com/B-P-Coders/coding-night.git",
   "keywords": [
     "education",
     "planning",
