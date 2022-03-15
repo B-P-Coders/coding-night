@@ -5,15 +5,16 @@
   "main": "main.js",
   "scripts": {
     "install-all": "npm install && cd src && npm install",
-    "start-react": "cd src && npm start",
-    "build-react": "cd src && npm run build",
-    "start": "npm run build-react && electron .",
+    "start-react": "cd src && npm start && cd ..",
+    "build-react": "cd src && npm run build && cd ..",
+    "start": "electron-forge start",
     "format": "",
     "build-mac": "electron-packager . --overwrite --platform=darwin --arch=x64,arm64 --icon=icons/icon.icns --prune=true --out=release-builds",
     "build-win": "electron-packager . Schoo4u --overwrite --asar=true --platform=win32 --arch=ia32 --icon=icons/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"School4u\"",
     "build-lin": "electron-packager . Schoo4u --overwrite --asar=true --platform=linux --arch=x64 --icon=icons/icon.png --prune=true --out=release-builds",
     "build-packager": "npm run build-win && npm run build-mac && npm run build-lin",
-    "build-builder": "electron-builder"
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "repository": "git+https://github.com/B-P-Coders/coding-night.git",
   "keywords": [
@@ -29,17 +30,48 @@
   "homepage": "https://github.com/B-P-Coders/coding-night#readme",
   "dependencies": {
     "@babel/core": "^7.16.0",
+    "electron-squirrel-startup": "^1.0.0",
     "missing": "^0.0.1",
     "npm-install-missing": "^0.1.4",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1"
   },
   "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.63",
+    "@electron-forge/maker-deb": "^6.0.0-beta.63",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.63",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.63",
+    "@electron-forge/maker-zip": "^6.0.0-beta.63",
     "electron": "^16.0.1",
-    "electron-builder": "^22.14.5",
-    "electron-packager": "^15.4.0",
     "foreman": "^3.0.1",
     "nodemon": "^2.0.15",
     "prettier": "^2.4.1"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "school4u"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
   }
 }
