@@ -79,7 +79,9 @@ function Canvas() {
         height={700}
         ref={canvasRef}
         onMouseDown={onMouseDown}
-        onMouseUp={onMouseUp}
+        onTouchStart={onMouseDown}
+        onTouchMove={onMouseMove}
+        onTouchEnd={onMouseUp}
         onMouseLeave={onMouseUp}
         onMouseMove={onMouseMove}
       />
