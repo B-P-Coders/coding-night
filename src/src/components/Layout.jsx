@@ -22,7 +22,7 @@ export default function Layout({ children }) {
           <span className={styles.themes}><ToggleSwitch/></span></div>
           <hr className={styles.line}/>
           <div className={styles.element}>Font size
-          <span className={styles.fonts}><ToggleFontSize/></span></div>
+          <span className={styles.themes}><ToggleFontSize/></span></div>
           <hr className={styles.line}/>
         </div>
         <FiSettings  className={styles.exit} onClick={() => setOpen(!open)}/>
