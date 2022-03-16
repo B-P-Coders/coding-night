@@ -7,14 +7,15 @@
     "install-all": "npm install && cd src && npm install",
     "start-react": "cd src && npm start && cd ..",
     "build-react": "cd src && npm run build && cd ..",
-    "start": "electron-forge start",
+    "start": "npm run build-react && electron .",
+    "start-forge": "electron-forge start",
     "format": "",
     "build-mac": "electron-packager . --overwrite --platform=darwin --arch=x64,arm64 --icon=icons/icon.icns --prune=true --out=release-builds",
     "build-win": "electron-packager . Schoo4u --overwrite --asar=true --platform=win32 --arch=ia32 --icon=icons/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"School4u\"",
     "build-lin": "electron-packager . Schoo4u --overwrite --asar=true --platform=linux --arch=x64 --icon=icons/icon.png --prune=true --out=release-builds",
     "build-packager": "npm run build-win && npm run build-mac && npm run build-lin",
-    "package": "electron-forge package",
-    "make": "electron-forge make"
+    "build-forge": "electron-forge package",
+    "make-forge": "electron-forge make"
   },
   "repository": "git+https://github.com/B-P-Coders/coding-night.git",
   "keywords": [
@@ -59,18 +60,33 @@
           }
         },
         {
+          "name": "@electron-forge/maker-dmg",
+          "config": {
+            "background": "./src/icons/banner.png",
+            "format": "ULFO"
+          }
+        },
+        {
           "name": "@electron-forge/maker-zip",
           "platforms": [
-            "darwin"
+            "darwin",
+            "linux",
+            "win32"
           ]
         },
         {
           "name": "@electron-forge/maker-deb",
-          "config": {}
+          "config": {
+            "maintainer": "B&P Coders",
+            "homepage": "https://school4u.ml/"
+          }
         },
         {
           "name": "@electron-forge/maker-rpm",
-          "config": {}
+          "config": {
+            "maintainer": "B&P Coders",
+            "homepage": "http://school4u.ml/"
+          }
         }
       ]
     }
