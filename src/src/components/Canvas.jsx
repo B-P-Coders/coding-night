@@ -88,8 +88,10 @@ function Canvas() {
         onMouseLeave={onMouseUp}
       />
       <br />
-      <input type="color" value={selectedColor} onChange={(e) => setSelectedColor(e.target.value)}/>
-      <select
+      <div className={styles.whole}>
+      <input className={styles.color} type="color" value={selectedColor} onChange={(e) => setSelectedColor(e.target.value)}/>
+      <div className={styles.container}>
+      <select className={styles.list}
         value={selectedSize}
         onChange={(e) => setSelectedSize(e.target.value)}
       >
@@ -99,8 +101,10 @@ function Canvas() {
           )
         }
       </select>
-      <button onClick={clear}>Clear</button>
-      <button onClick={download}>Download</button>
+      </div>
+      <button onClick={clear} className={styles.clear}>Clear</button>
+      <button onClick={download} className={styles.download}>Download</button>
+      </div>
     </>
   );
 }
