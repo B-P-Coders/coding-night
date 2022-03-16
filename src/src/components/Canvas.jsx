@@ -75,8 +75,8 @@ function Canvas() {
   return (
     <>
       <canvas
-        width={1000}
-        height={700}
+        width={700}
+        height={500}
         ref={canvasRef}
         onMouseDown={onMouseDown}
         onMouseUp={onMouseUp}
