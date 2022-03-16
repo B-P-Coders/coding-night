@@ -103,7 +103,7 @@ function Canvas() {
       </select>
       </div>
       <button onClick={clear} className={styles.clear}>Clear</button>
-      <button onClick={download} className={styles.download}>Download</button>
+      <button onClick={download} className={styles.download}>Save</button>
       </div>
     </>
   );

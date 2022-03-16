@@ -4,6 +4,7 @@ import { CgNotes } from "react-icons/cg";
 import React from 'react';
 import { Link } from 'react-router-dom';
 import * as styles from '../styles/links.module.css';
+import { RiTodoLine } from "react-icons/ri";
 
 const links = [
   {
@@ -30,6 +31,11 @@ const links = [
     title: 'Drawing',
     path: '/draw',
     icon: <MdOutlineDraw/>
+  },
+  {
+    title: 'Todo',
+    path: '/todo',
+    icon: <RiTodoLine/>
   }
 ]
 

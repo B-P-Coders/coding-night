@@ -1,5 +1,8 @@
 import {useState} from 'react'
+import { ImBin } from "react-icons/im";
 import AddTaskForm from '../components/AddTaskForm'
+import Layout from "../components/Layout"
+import * as styles from "../styles/todo.module.css"
 
 export default function Todo()
 {
@@ -17,20 +20,20 @@ export default function Todo()
     }
 
     return(
-        <div className={StyleSheet.todolist}>
+      <Layout>
+        <div className={styles.todolist}>
             {tasks.map((task, index) => (
-                <div className={StyleSheet.todo}>
-                    <span onClick={() => toggleTask(index)} className={task.isCompleted ? StyleSheet.todotest : StyleSheet.todocompleted}>
+              <div className={styles.todo} onClick={() => toggleTask(index)} key={index}>
+                    <span className={task.isCompleted ? styles.todocompleted : styles.todotest}>
                         {task.text}
                     </span>
+                    <button onClick={() => removeTask(index)}>
+                        <ImBin/>
+                    </button>
                 </div>
-                <button onClick={() => removeTask(index)}>
-                    {/* ikonka smieci */}
-                </button>
             ))}
-            <AddTaskForm addTask={addTask}/>
         </div>
+        <AddTaskForm addTask={addTask}/>
+      </Layout>
     )
 }
-
-// https://codepen.io/termyanen/pen/vMWoox

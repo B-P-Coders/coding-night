@@ -8,6 +8,7 @@ import Calculator from './pages/Calculator';
 import Formulas from './pages/Formulas';
 import BinCalculator from './pages/BinCalculator';
 import Draw from './pages/Draw';
+import Todo from './pages/Todo';
 
 export default function App()
 {
@@ -21,7 +22,8 @@ export default function App()
             <Route path='/calculator' element={<Calculator />}/>
             <Route path='/bincalculator' element={<BinCalculator />}/>
             <Route path='/draw' element={<Draw />}/>
-            <Route exact path='/' element={<Index/>} />
+            <Route path='/todo' element={<Todo/>}/>
+            <Route exact path='/' element={<Index/>}/>
           </Routes>
         </Router>
     )
