@@ -78,10 +78,14 @@ function Canvas() {
         width={700}
         height={500}
         ref={canvasRef}
+        onPointerDown={onMouseDown}
+        onPointerCancel={onMouseUp}
+        onPointerMove={onMouseMove}
+        onPointerUp={onMouseUp}
         onMouseDown={onMouseDown}
         onMouseUp={onMouseUp}
-        onMouseLeave={onMouseUp}
         onMouseMove={onMouseMove}
+        onMouseLeave={onMouseUp}
       />
       <br />
       <input type="color" value={selectedColor} onChange={(e) => setSelectedColor(e.target.value)}/>
