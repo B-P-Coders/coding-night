@@ -8,6 +8,11 @@ const sizes = [
 ]
 export default function ToggleFontSize () {
   return(
-    <span className={styles.main}>aaaaaaa</span>
+    <div>
+      <input type="checkbox" id="btnControl" className={styles.btnControl}/>
+
+    <label className={styles.btn} for="btnControl"><span className={styles.plus}>+</span></label>
+    <button className={styles.minus}>-</button>
+    </div>
   )
 }
