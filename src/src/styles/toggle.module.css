@@ -8,8 +8,8 @@
   padding: 0px;
   font-weight: 400;
   border: 0;
-outline: none;
-position: relative;
+  outline: none;
+  position: relative;
 
 -moz-appearance:none; /* Firefox */
 -webkit-appearance:none; /* Safari and Chrome */
