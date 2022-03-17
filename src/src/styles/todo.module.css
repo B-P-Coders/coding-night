@@ -6,6 +6,10 @@
     max-height: calc(85vh - 2em);
 }
 
+.todolist::-webkit-scrollbar {
+  display:none;
+}
+
 .todo {
     background: var(--secondary-accent-color);
     box-shadow: 1px 1px 1px var(--shadow);
@@ -26,6 +30,7 @@
 
 .todocompleted {
     text-decoration: line-through;
+    color: red;
 }
 
 .todolist button {

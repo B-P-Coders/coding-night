@@ -10,6 +10,12 @@
 
 - useful formulas
 
+- todo list
+
+- binary calculator
+
+- drawing field
+
 #### 
 
 #### School4U also has it's own logo. Changing functionalities is handled by sidebar and some cards.
@@ -85,18 +91,24 @@ npm run build-packager
         - Formulas.jsx being a reminder of important formulas in math, physics and chemistry
         
         - BinCalculator.jsx which changes decimal numbers into hexadecimal, binary and octal
+
+        - Todo.jsx  responisble for list of things to do
         
         - components folder where are located React components being used in the app, it contains: 
         
-          - ToggleSwitch.jsx which provides switching the theme
+          - ToggleSwitch.jsx, Settings.jsx which provides switching the theme
           
           - Sidebar.jsx creating the slidebar on the left on app's screen
           
           - Layout.jsx creating a layout for the app
           
-          - Header.jsx
+          - Header.jsx (no comment needed)
           
           - Card.jsx being a template of the card model used in the app
+
+          - Canvas.jsx providing a drawing field
+
+          - Links.jsx responible for hyperlinks on icons
 
 # 
 

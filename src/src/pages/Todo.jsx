@@ -23,8 +23,8 @@ export default function Todo()
       <Layout>
         <div className={styles.todolist}>
             {tasks.map((task, index) => (
-              <div className={styles.todo} onClick={() => toggleTask(index)} key={index}>
-                    <span className={task.isCompleted ? styles.todocompleted : styles.todotest}>
+              <div className={styles.todo} key={index}>
+                    <span className={task.isCompleted ? styles.todocompleted : styles.todotest} onClick={() => toggleTask(index)}>
                         {task.text}
                     </span>
                     <button onClick={() => removeTask(index)}>
