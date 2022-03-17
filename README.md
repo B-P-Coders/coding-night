@@ -102,7 +102,7 @@ npm run build-packager
           
           - Layout.jsx creating a layout for the app
           
-          - Header.jsx
+          - Header.jsx (no comment needed)
           
           - Card.jsx being a template of the card model used in the app
 
