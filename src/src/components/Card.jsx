@@ -6,7 +6,7 @@ export default function Card(props) {
         <div className={styles.flipCard}>
             <div className={styles.flipCardInner}>
                 <div className={styles.flipCardFront}>
-                    <img src={props.pic} alt="essa" className={styles.imgContainer}/>
+                    <img src={props.pic} className={styles.imgContainer}/>
                     <p>{props.title}</p>
                     <span>{props.desc}</span>
                 </div>

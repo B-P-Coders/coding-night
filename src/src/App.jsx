@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Index from './pages/Index';
 import Notes from './pages/Notes';
 import Math from './pages/Math'
@@ -7,6 +7,7 @@ import Timetable from './pages/Timetable';
 import Calculator from './pages/Calculator';
 import Formulas from './pages/Formulas';
 import BinCalculator from './pages/BinCalculator';
+import WordCounter from './pages/WordCount'
 import Draw from './pages/Draw';
 import Todo from './pages/Todo';
 
@@ -23,6 +24,7 @@ export default function App()
             <Route path='/bincalculator' element={<BinCalculator />}/>
             <Route path='/draw' element={<Draw />}/>
             <Route path='/todo' element={<Todo/>}/>
+            <Route path='/wordcounter' element={<WordCounter/>}/>
             <Route exact path='/' element={<Index/>}/>
           </Routes>
         </Router>

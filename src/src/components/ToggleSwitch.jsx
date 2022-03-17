@@ -27,7 +27,7 @@ export default function ToggleSwitch ()
       <div className={styles.container}>
       <label>
         <select onChange={ChangeTheme} ref={themeSelect} defaultValue={theme} className={styles.list}>
-          {themes.map((theme) => <option className={styles.opt}>{theme}</option>)}
+          {themes.map((index, theme) => <option className={styles.opt} key={index}>{theme}</option>)}
         </select>
       </label>
         </div>
