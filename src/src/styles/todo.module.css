@@ -30,6 +30,7 @@
 
 .todocompleted {
     text-decoration: line-through;
+    color: red;
 }
 
 .todolist button {
