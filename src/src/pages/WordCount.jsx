@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import Layout from "../components/Layout";
-import * as styles from "../styles/word.module.css";
+import * as styles from "../styles/words.module.css";
 
 export default function WordCouter() {
   const countTarget = useRef(null)
@@ -13,16 +13,16 @@ export default function WordCouter() {
   }
   return (
     <Layout>
-    <div className="uiInputContainer">
+    <div className={styles.uiInputContainer}>
       <h2>Word Count</h2>
-      <label className="uiFormInput-container">
+      <label className={styles.uiFormInputContainer}>
         <textarea
-          className="uiFormInput"
+          className={styles.uiFormInput}
           ref={countTarget}
           onChange={update}
         >
         </textarea>
-        <span className="formInputLabel">Message</span>
+        <span className={styles.formInputLabel}>Message</span>
       </label>
       <p aria-live="polite">
         <strong>
