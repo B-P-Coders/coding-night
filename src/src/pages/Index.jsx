@@ -6,6 +6,7 @@ import Card  from "../components/Card";
 import picture from '../images/doc.png'
 import painting from '../images/paint.png'
 import { Link } from 'react-router-dom';
+import counter from '../images/word-counter.png'
 
 
 const list = ['Timetable', 'Calendar', 'Calculator', 'Notebook', 'Markbook'];
@@ -15,6 +16,7 @@ inp = [(6-inp)];
 if (inp == 6 || inp == 0){
   inp = ['Weekend już jest!'];
 }
+let essey = ['No need to worry whether your work has enough words or just how long it is'];
 export default function Index () {
   return (
     <Layout>
@@ -23,7 +25,7 @@ export default function Index () {
         <div className={styles.cardsContainer}>
           <Card pic={picture} title="Check out our app's options" desc="We've made some amazing tools just for you! It's all to help you get better in any subject!" values={list}/>
           <Card pic={painting} title="Check out how many days are left to the weekend" desc="The time zone is selected automatically" values={inp}/>
-          <Link to="/wordcounter"><Card pic={""} title="Word counter" desc="Check how many words has your essey" values={[]}/></Link>
+          <Link to="/wordcounter"><Card pic={counter} title="Word counter" desc="Check how many words has your essey" values={[essey]}/></Link>
         </div>
       </div>
     </Layout>
