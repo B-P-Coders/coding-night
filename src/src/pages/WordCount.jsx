@@ -3,14 +3,13 @@ import Layout from "../components/Layout";
 import * as styles from "../styles/word.module.css";
 
 export default function WordCouter() {
-  const wordCount = useRef(null);
-  const characterCount = useRef(null)
   const countTarget = useRef(null)
+  const [characterCount, setCharacterCount] = useState()
+  const [wordCount, setWordCount] = useState()
   function update() {
-    const text = wordCount.current.value
-    console.log(text)
-    wordCount.current.innerText = text.split(" ").length()
-    characterCount.current.innerText = wordCount.replace(" ", "").split("").length()
+    const text = countTarget.current.value
+    setWordCount(text.split(" ").replaceAll("  ", " ").length || 0)
+    setCharacterCount(text.replaceAll(" ", "").replaceAll("\n", "").split("").length || 0)
   }
   return (
     <Layout>
@@ -27,11 +26,11 @@ export default function WordCouter() {
       </label>
       <p aria-live="polite">
         <strong>
-          <span id="wordCount" ref={wordCount}>0</span> words
+          <span id="wordCount">{wordCount}</span> words
         </strong>{" "}
         |{" "}
         <strong>
-          <span id="characterCount" ref={characterCount}>0</span> characters
+          <span id="characterCount">{characterCount}</span> characters
         </strong>
       </p>
     </div>
