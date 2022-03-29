@@ -4,12 +4,12 @@ import * as styles from "../styles/words.module.css";
 
 export default function WordCouter() {
   const countTarget = useRef(null)
-  const [characterCount, setCharacterCount] = useState()
-  const [wordCount, setWordCount] = useState()
+  const [characterCount, setCharacterCount] = useState(0)
+  const [wordCount, setWordCount] = useState(0)
   function update() {
     const text = countTarget.current.value
-    setWordCount(text.split(" ").replaceAll("  ", " ").length || 0)
-    setCharacterCount(text.replaceAll(" ", "").replaceAll("\n", "").split("").length || 0)
+    setWordCount(text.replaceAll("  ", " ").replaceAll("\n", " ").split(" ").length || 0)
+    setCharacterCount(text.replace(" ", "").replaceAll("\n", " ").split("").length || 0)
   }
   return (
     <Layout>
@@ -19,12 +19,12 @@ export default function WordCouter() {
         <textarea
           className={styles.uiFormInput}
           ref={countTarget}
-          onChange={update}
+          onInput={update}
         >
         </textarea>
-        <span className={styles.formInputLabel}>Message</span>
+        <span className={styles.formInputLabel}>Text</span>
       </label>
-      <p aria-live="polite">
+      <p aria-live="polite" className={styles.p}>
         <strong>
           <span id="wordCount">{wordCount}</span> words
         </strong>{" "}
