@@ -31,7 +31,6 @@
   "homepage": "https://github.com/B-P-Coders/coding-night#readme",
   "dependencies": {
     "@babel/core": "^7.16.0",
-    "@electron-forge/maker-dmg": "^6.0.0-beta.63",
     "electron-forge": "^5.2.4",
     "electron-squirrel-startup": "^1.0.0",
     "missing": "^0.0.1",
@@ -40,6 +39,7 @@
     "react-icons": "^4.3.1"
   },
   "devDependencies": {
+    "@electron-forge/maker-dmg": "^6.0.0-beta.63",
     "@electron-forge/cli": "^6.0.0-beta.63",
     "@electron-forge/maker-deb": "^6.0.0-beta.63",
     "@electron-forge/maker-rpm": "^6.0.0-beta.63",
