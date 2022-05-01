@@ -11,8 +11,8 @@
     "start-forge": "electron-forge start",
     "format": "",
     "build-mac": "electron-packager . --overwrite --platform=darwin --arch=x64,arm64 --icon=./src/icons/icon.icns --prune=true --out=release-builds",
-    "build-win": "electron-packager . Schoo4u --overwrite --asar=true --platform=win32 --arch=ia32 --icon=./src/icons/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"School4u\"",
-    "build-lin": "electron-packager . Schoo4u --overwrite --asar=true --platform=linux --arch=x64,arm64 --icon=./src/icons/icon.png --prune=true --out=release-builds",
+    "build-win": "electron-packager . School4u --overwrite --asar=true --platform=win32 --arch=ia32 --icon=./src/icons/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"School4u\"",
+    "build-lin": "electron-packager . School4u --overwrite --asar=true --platform=linux --arch=x64,arm64 --icon=./src/icons/icon.png --prune=true --out=release-builds",
     "build-packager": "npm run build-win && npm run build-mac && npm run build-lin",
     "build-forge": "electron-forge package",
     "make-forge": "electron-forge make"
