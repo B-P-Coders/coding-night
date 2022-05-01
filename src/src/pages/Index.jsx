@@ -14,7 +14,7 @@ var today = new Date();
 let inp = (today.getDay());
 inp = [(6-inp)];
 if (inp == 6 || inp == 0){
-  inp = ['Weekend już jest!'];
+  inp = ['Weekend is here!'];
 }
 let essey = ['No need to worry whether your work has enough words or just how long it is'];
 export default function Index () {

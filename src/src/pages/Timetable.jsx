@@ -19,7 +19,7 @@ function Timetable() {
       <Header value="Check out your lessons timetable!"/>
       <div className={styles.inputs}>
         <input type="text" ref={input} placeholder="Please type address"/>
-        <button onClick={fetchTimetable}>Pobierz plan</button>
+        <button onClick={fetchTimetable}>Download the timetable</button>
       </div>
       <Iframe url={link} width={window.innerWidth / 1.2} height={window.innerHeight / 1.5} className={styles.iframe}/>
     </div>
